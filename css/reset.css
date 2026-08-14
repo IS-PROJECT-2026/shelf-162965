@@ -1,1 +1,78 @@
-/* Design tokens. */
+/* Reset and base typography. */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--colour-bg);
+  color: var(--colour-ink);
+  font-family: var(--font-body);
+  font-size: var(--size-200);
+  line-height: var(--leading-body);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color var(--transition), color var(--transition);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-ui);
+  line-height: var(--leading-tight);
+  text-wrap: balance;
+  font-weight: 600;
+}
+
+h1 { font-size: var(--size-600); }
+h2 { font-size: var(--size-500); }
+h3 { font-size: var(--size-400); }
+
+p, li {
+  text-wrap: pretty;
+}
+
+a {
+  color: var(--colour-accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+img, picture, svg {
+  display: block;
+  max-width: 100%;
+}
+
+button, input, select {
+  font: inherit;
+  color: inherit;
+}
+
+ul[class], ol[class] {
+  list-style: none;
+  padding: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--colour-accent);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
