@@ -1,1 +1,54 @@
-/* Design tokens. */
+/* Design tokens for Shelf. */
+
+:root {
+  /* Colour — light theme */
+  --colour-bg: #f4f1ea;
+  --colour-surface: #fffdf8;
+  --colour-ink: #23201b;
+  --colour-ink-muted: #6b6459;
+  --colour-accent: #7c4a2d;
+  --colour-accent-soft: #e8dccb;
+  --colour-border: #ddd5c7;
+
+  /* Typography */
+  --font-body: Georgia, "Iowan Old Style", "Times New Roman", serif;
+  --font-ui: "Segoe UI", system-ui, -apple-system, sans-serif;
+
+  --size-100: 0.875rem;
+  --size-200: 1rem;
+  --size-300: 1.125rem;
+  --size-400: 1.375rem;
+  --size-500: 1.75rem;
+  --size-600: 2.5rem;
+
+  --leading-tight: 1.25;
+  --leading-body: 1.7;
+
+  /* Spacing scale */
+  --space-3xs: 0.25rem;
+  --space-2xs: 0.5rem;
+  --space-xs: 0.75rem;
+  --space-s: 1rem;
+  --space-m: 1.5rem;
+  --space-l: 2.5rem;
+  --space-xl: 4rem;
+
+  /* Structure */
+  --measure: 34rem;
+  --radius: 4px;
+  --shadow-soft: 0 1px 3px rgba(35, 32, 27, 0.08);
+  --shadow-lift: 0 6px 18px rgba(35, 32, 27, 0.14);
+  --transition: 160ms ease;
+}
+
+[data-theme="dark"] {
+  --colour-bg: #1a1815;
+  --colour-surface: #232019;
+  --colour-ink: #ece5d8;
+  --colour-ink-muted: #a29886;
+  --colour-accent: #d9a273;
+  --colour-accent-soft: #3a322a;
+  --colour-border: #3d372e;
+  --shadow-soft: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --shadow-lift: 0 6px 18px rgba(0, 0, 0, 0.5);
+}
