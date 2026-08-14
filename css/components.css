@@ -70,3 +70,17 @@
   background-color: var(--colour-accent);
   color: var(--colour-surface);
 }
+/* Site footer. */
+
+.site-footer {
+  margin-top: var(--space-xl);
+  border-top: 1px solid var(--colour-border);
+  padding-block: var(--space-m);
+  font-family: var(--font-ui);
+  font-size: var(--size-100);
+  color: var(--colour-ink-muted);
+}
+
+.site-footer p + p {
+  margin-top: var(--space-2xs);
+}
