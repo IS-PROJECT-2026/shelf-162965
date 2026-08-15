@@ -167,3 +167,27 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+/* Filter buttons. */
+
+.filter-btn {
+  padding: var(--space-2xs) var(--space-s);
+  background-color: transparent;
+  border: 1px solid var(--colour-border);
+  border-radius: var(--radius);
+  font-family: var(--font-ui);
+  font-size: var(--size-100);
+  color: var(--colour-ink-muted);
+  cursor: pointer;
+  transition: background-color var(--transition), color var(--transition);
+}
+
+.filter-btn:hover {
+  color: var(--colour-ink);
+  border-color: var(--colour-ink-muted);
+}
+
+.filter-btn[aria-pressed="true"] {
+  background-color: var(--colour-accent);
+  border-color: var(--colour-accent);
+  color: #f8f4ec;
+}
