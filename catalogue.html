@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shelf — Read the Classics</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<footer class="site-footer">
+    <div class="container">
+      <p>Texts sourced from <a href="https://www.gutenberg.org">Project Gutenberg</a> and are in the public domain.</p>
+      <p>Built by Simplicious Wachira. <a href="https://github.com/IS-PROJECT-2026/shelf-162965">Source on GitHub</a>.</p>
+    </div>
+  </footer>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="site-header__brand" href="index.html">Shelf</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html" >Home</a>
+        <a href="catalogue.html" aria-current="page">Catalogue</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+  
+  <main class="container" id="main">
+    <section class="section stack">
+      <h1>Catalogue</h1>
+      <p>Six public domain works, free to read in full.</p>
+
+      <div class="grid" id="book-grid">
+
+        <a class="book-card" href="book.html?id=pride" data-genre="romance">
+          <div class="book-cover" style="--cover-bg: #6b3f5b">
+            <span class="book-cover__title">Pride and Prejudice</span>
+            <span class="book-cover__author">Austen</span>
+          </div>
+          <div class="book-card__body">
+            <span class="book-card__title">Pride and Prejudice</span>
+            <span class="book-card__author">Jane Austen, 1813</span>
+            <span class="badge">Romance</span>
+          </div>
+        </a>
+
+        <a class="book-card" href="book.html?id=frankenstein" data-genre="gothic">
+          <div class="book-cover" style="--cover-bg: #2f4f45">
+            <span class="book-cover__title">Frankenstein</span>
+            <span class="book-cover__author">Shelley</span>
+          </div>
+          <div class="book-card__body">
+            <span class="book-card__title">Frankenstein</span>
+            <span class="book-card__author">Mary Shelley, 1818</span>
+            <span class="badge">Gothic</span>
+          </div>
+        </a>
+
+      </div>
+    </section>
+  </main>
+  
+</body>
+</html>
