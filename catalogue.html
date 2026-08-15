@@ -15,6 +15,9 @@
       <p>Built by Simplicious Wachira. <a href="https://github.com/IS-PROJECT-2026/shelf-162965">Source on GitHub</a>.</p>
     </div>
   </footer>
+  
+  <script src="js/filter.js"></script>
+  
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
@@ -33,6 +36,14 @@
     <section class="section stack">
       <h1>Catalogue</h1>
       <p>Six public domain works, free to read in full.</p>
+
+      <div class="cluster" role="group" aria-label="Filter by genre">
+        <button class="filter-btn" data-filter="all" aria-pressed="true">All</button>
+        <button class="filter-btn" data-filter="romance" aria-pressed="false">Romance</button>
+        <button class="filter-btn" data-filter="gothic" aria-pressed="false">Gothic</button>
+        <button class="filter-btn" data-filter="scifi" aria-pressed="false">Sci-Fi</button>
+        <button class="filter-btn" data-filter="mystery" aria-pressed="false">Mystery</button>
+      </div>
 
       <div class="grid" id="book-grid">
 
