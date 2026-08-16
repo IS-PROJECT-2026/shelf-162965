@@ -211,3 +211,42 @@
 .book-card:hover .book-card__title {
   color: var(--colour-accent);
 }
+/* Reader view. */
+
+.reader {
+  padding-block: var(--space-l) var(--space-xl);
+}
+
+.reader__back {
+  font-family: var(--font-ui);
+  font-size: var(--size-100);
+  margin-bottom: var(--space-l);
+}
+
+.reader__text {
+  font-size: var(--reader-size, var(--size-300));
+  line-height: var(--leading-body);
+}
+
+.reader__text h1 {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: var(--size-500);
+  margin-bottom: var(--space-2xs);
+}
+
+.reader__meta {
+  font-family: var(--font-ui);
+  font-size: var(--size-100);
+  color: var(--colour-ink-muted);
+  margin-bottom: var(--space-m);
+}
+
+.reader__text p + p {
+  margin-top: var(--space-s);
+  text-indent: 1.5em;
+}
+
+.reader__text p:first-of-type {
+  text-indent: 0;
+}
