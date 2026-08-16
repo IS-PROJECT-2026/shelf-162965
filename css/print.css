@@ -1,0 +1,15 @@
+/* Print styles. */
+
+@media print {
+  .site-header,
+  .site-footer,
+  .reader__controls,
+  .skip-link {
+    display: none;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+  }
+}
