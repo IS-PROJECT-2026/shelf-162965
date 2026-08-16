@@ -1,6 +1,13 @@
-/* Print styles for reader output. */
+/* Print styles. */
 
 @media print {
+  .site-header,
+  .site-footer,
+  .reader__controls,
+  .skip-link {
+    display: none;
+  }
+
   body {
     background: #fff;
     color: #000;
@@ -14,5 +21,10 @@
   .reader__text p {
     orphans: 3;
     widows: 3;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
   }
 }
