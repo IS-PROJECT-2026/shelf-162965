@@ -1,0 +1,18 @@
+/* Print styles for reader output. */
+
+@media print {
+  body {
+    background: #fff;
+    color: #000;
+  }
+
+  .reader__text {
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+
+  .reader__text p {
+    orphans: 3;
+    widows: 3;
+  }
+}
