@@ -17,3 +17,14 @@ document.getElementById("font-up").addEventListener("click", () => setSize(size 
 document.getElementById("font-down").addEventListener("click", () => setSize(size - STEP));
 
 setSize(size);
+
+/* Theme toggle. */
+
+const themeBtn = document.getElementById("theme-toggle");
+
+themeBtn.addEventListener("click", () => {
+  const dark = document.documentElement.dataset.theme === "dark";
+  document.documentElement.dataset.theme = dark ? "light" : "dark";
+  themeBtn.setAttribute("aria-pressed", String(!dark));
+  themeBtn.textContent = dark ? "Dark" : "Light";
+});
