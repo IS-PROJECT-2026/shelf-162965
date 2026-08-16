@@ -8,6 +8,21 @@
     display: none;
   }
 
+  body {
+    background: #fff;
+    color: #000;
+  }
+
+  .reader__text {
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+
+  .reader__text p {
+    orphans: 3;
+    widows: 3;
+  }
+
   a[href]::after {
     content: " (" attr(href) ")";
     font-size: 90%;
