@@ -191,3 +191,23 @@
   border-color: var(--colour-accent);
   color: #f8f4ec;
 }
+/* Card interaction states. */
+
+.book-card {
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+
+.book-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lift);
+  border-color: var(--colour-ink-muted);
+}
+
+.book-card:focus-visible {
+  outline: 2px solid var(--colour-accent);
+  outline-offset: 3px;
+}
+
+.book-card:hover .book-card__title {
+  color: var(--colour-accent);
+}
