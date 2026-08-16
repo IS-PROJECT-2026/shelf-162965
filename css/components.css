@@ -250,3 +250,30 @@
 .reader__text p:first-of-type {
   text-indent: 0;
 }
+/* Reader controls. */
+
+.reader__controls {
+  margin-bottom: var(--space-m);
+}
+
+.control-btn {
+  padding: var(--space-3xs) var(--space-xs);
+  min-width: 2.75rem;
+  background-color: transparent;
+  border: 1px solid var(--colour-border);
+  border-radius: var(--radius);
+  font-family: var(--font-ui);
+  color: var(--colour-ink-muted);
+  cursor: pointer;
+  transition: background-color var(--transition), color var(--transition);
+}
+
+.control-btn:hover:not(:disabled) {
+  color: var(--colour-ink);
+  border-color: var(--colour-ink-muted);
+}
+
+.control-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
