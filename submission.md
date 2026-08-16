@@ -2,159 +2,139 @@
 
 ## 1. Student Details
 
-- **Full Name:** [Your Name Here]
-- **GitHub Username:** [Your Username Here]
-- **Email:** [Your Student Email Here]
+- **Full Name:** Simplicious Wachira
+- **GitHub Username:** SIMPLICIOUSWACH
+- **Email:** Simplicious.Wachira@strathmore.edu
 
 ---
 
 ## 2. Deployed Project Link
 
-- **Live GitHub Pages URL:** [Paste your live deployment link here]
-  *(Example: https://is-project-2026.github.io/hospital-management-138141/)*
+- **Live GitHub Pages URL:** https://is-project-2026.github.io/shelf-162965/
 
 ---
 
 ## 3. Reflection — Grounded in Your Git History
 
-> **Rules:** Every answer below **must include a direct link** to the specific commit, PR, issue, or branch in your repository that demonstrates what you are describing. Answers without working links will not be graded. Generic explanations that could apply to any project will receive zero marks.
->
-> **Marks:** A (2 marks) · B (1 mark) · C (1 mark) · D (1 mark) = **5 marks total**
-
 ### A. Your Best Commit
 
-Paste the URL of the commit in your history that you think best demonstrates clean conventional commit practice (good type tag, clear subject, meaningful body or footer).
-
-- **Commit URL:** [Paste the full GitHub commit URL here]
-- **Why this one?** [1–2 sentences explaining what makes this commit well-structured]
+- **Commit URL:** https://github.com/IS-PROJECT-2026/shelf-162965/commit/f3265ea
+- **Why this one?** The type tag matches what the change actually does, the subject is imperative and under fifty characters, and the body explains why a token layer exists rather than restating the diff. The `Closes #2` footer linked it to its tracking issue, so the issue closed and the milestone advanced automatically on merge.
 
 ### B. A Mistake or Struggle
 
-Link to a commit, PR, or issue where something went wrong — a bad commit message you had to fix, a branch you had to delete and recreate, a PR that needed rework, or a deployment that broke. 
-
-- **Link to the evidence:** [Paste URL here]
-- **What happened and how did you recover?** [2–3 sentences]
+- **Link to the evidence:** https://github.com/IS-PROJECT-2026/shelf-162965/pull/20
+- **What happened and how did you recover?** I enabled "Require approvals" on the branch protection rule before opening my first pull request. Because GitHub prohibits approving your own pull request, PR #20 returned a status of `REVIEW_REQUIRED` and could not be merged by any route short of an administrator override. I recovered by setting the required approval count to zero while keeping the pull request requirement itself in place, which preserves the traceability the rule exists for without creating a condition that a single contributor can never satisfy.
 
 ### C. A Pull Request You're Proud Of
 
-Paste the URL of the PR that best shows your self-review process — one where the description is clear, the issue linkage is correct, and the diff tells a coherent story.
-
-- **PR URL:** [Paste the full GitHub PR URL here]
-- **What did you check before merging?** [1–2 sentences on what you reviewed]
+- **PR URL:** https://github.com/IS-PROJECT-2026/shelf-162965/pull/30
+- **What did you check before merging?** I verified that every `data-genre` value in the markup matched a `data-filter` value on a button, and that `aria-pressed` was serving as both the state store and the CSS hook so the visual and announced states cannot drift apart. I also confirmed the catalogue degrades to showing all cards if the script fails to load.
 
 ### D. One Thing You Would Do Differently
 
-If you had to restart this project from scratch with everything you know now, name one specific workflow decision you would change (not a code change — a Git/project management decision).
-
-- **What would you change?** [1–2 sentences]
-- **Link to the evidence of the original decision:** [Paste URL to the commit, branch, or issue that shows the decision you'd redo]
+- **What would you change?**I would have committed the .nojekyll addition with a conventional type tag and a subject under fifty characters, moving the explanation into the commit body where it belongs. It is the only commit in my history that breaks the convention I applied everywhere else, and it happened because I wrote the messag
+- **Link to the evidence of the original decision:** https://github.com/IS-PROJECT-2026/shelf-162965/commit/d46de81
 
 ---
 
 ## 4. Screenshots of Key GitHub Features
 
-Demonstrate your workflow mechanics by embedding your screenshots below.
-
-> **CRITICAL FOR WORKING IMAGES:** Do not type manual folder paths. Edit this file directly on the GitHub web interface, click on the blank line below each prompt, and **paste (Ctrl+V / Cmd+V)** your screenshot. GitHub will automatically upload the file and generate a permanent, working image link for you.
-
 ### A. Milestones and Issues
-*Provide a screenshot showing your active milestone(s) and the granular tracking issues linked directly to them.*
 
-[PASTE YOUR MILESTONE SCREENSHOT DIRECTLY HERE]
+<img width="740" height="266" alt="image" src="https://github.com/user-attachments/assets/2dc381f5-5662-47c5-bdff-a4b1af31b748" />
 
-* **Caption:** [Write a brief sentence describing your milestones here]
+
+
+* **Caption:** Three milestones representing the project's development phases, with nineteen granular issues distributed across them and each issue linked to its milestone before implementation began.
 
 ### B. Project Board
-*Provide a screenshot of your GitHub Project Board with your issues organized dynamically across columns (To Do, In Progress, Done).*
 
-[PASTE YOUR PROJECT BOARD SCREENSHOT DIRECTLY HERE]
+<img width="935" height="312" alt="image" src="https://github.com/user-attachments/assets/b0326e3e-92ee-4b7f-a626-a7f4ae1846fb" />
 
-* **Caption:** [Write a brief sentence describing your board state here]
+
+
+* **Caption:** The Kanban board with issues distributed across To Do, In Progress, and Done. Cards were moved to In Progress before each branch was created and to Done only after the corresponding pull request merged.
 
 ### C. Branching Architecture
-*Provide a screenshot showing your local or remote Git branch list, highlighting your use of conventional, issue-linked naming patterns (e.g., `feat/`, `fix/`, `style/`).*
 
-[PASTE YOUR BRANCHING SCREENSHOT DIRECTLY HERE]
+<img width="938" height="352" alt="image" src="https://github.com/user-attachments/assets/f25248be-4d0d-4e51-93ae-c394e649c80b" />
 
-* **Caption:** [Write a brief sentence describing your branch list here]
+
+
+* **Caption:** Feature branches named by commit type and issue number, using `feat/`, `fix/`, `style/`, `chore/`, and `docs/` prefixes. No development occurred directly on `main`.
 
 ### D. Pull Requests & Traceability
-*Provide a screenshot of a completed or open Pull Request (PR) on GitHub that clearly shows it is linked to a related development issue.*
 
-[PASTE YOUR PULL REQUEST SCREENSHOT DIRECTLY HERE]
+<img width="659" height="200" alt="image" src="https://github.com/user-attachments/assets/b803e2c8-0681-4c7b-9958-cc66123ae8d1" />
 
-* **Caption:** [Write a brief sentence describing your PR and what issue it closes]
+
+
+* **Caption:** Pull request #33, "feat: build reader view layout", which closes issue #14 through a Closes reference in both the commit footer and the pull request description.
 
 ---
 
 ## 5. Merge Conflict Evidence
 
-You must engineer **three merge conflicts**, each triggered by a **different cause** from those covered in the lecture. For Conflict 1, document the full resolution lifecycle. For Conflicts 2 and 3, provide the conflict marker screenshot and identify the cause.
-
-> **Marks:** Conflict 1 full chronology (2 marks) · Conflict 2 (1 mark) · Conflict 3 (1 mark) · All three use distinct causes (1 mark) = **5 marks total**
-
----
-
 ### Conflict 1 — Full Chronology
 
-**What cause did you use?** [Name the type of conflict cause from the lecture]
+**What cause did you use?** Concurrent modification of the same line by two branches.
 
 #### Step 1: Generating the Clash
-*Screenshot showing the merge attempt and the conflict warning.*
 
-[PASTE SCREENSHOT OF ATTEMPTED MERGE / TERMINAL WARNING HERE]
+<img width="506" height="173" alt="image" src="https://github.com/user-attachments/assets/23de8401-474c-4825-b112-c8cd46204c38" />
 
-* **Caption:** [Describe which two branches collided and the warning received]
+
+
+
+* **Caption:** `style/22-deepen-accent-colour` merging `main`, which by then contained `style/21-warm-accent-colour`. Both branches were cut from the same commit and both altered the `--colour-accent` declaration, producing `CONFLICT (content): Merge conflict in css/variables.css`.
 
 #### Step 2: Inside the Code Editor (Conflict Markers)
-*Screenshot showing the raw, unresolved conflict markers (`<<<<<<< HEAD`, `=======`, `>>>>>>>`) in your editor.*
 
-[PASTE SCREENSHOT OF RAW CONFLICT MARKERS HERE]
+<img width="1429" height="606" alt="image" src="https://github.com/user-attachments/assets/eac16485-2b0d-4ea9-83f7-1108ebbe2051" />
 
-* **Caption:** [Explain what caused the dispute and your reasoning for the final version]
+
+
+* **Caption:** Git can determine that both sides changed the same line relative to their common ancestor, but not which value was intended, so it writes both into the file between `<<<<<<< HEAD`, `=======`, and `>>>>>>> main` markers. I resolved in favour of the incoming value because the declaration sits inside the dark theme block, where the darker candidate would not have met contrast requirements against the near-black background.
 
 #### Step 3: Resolution & Clean Merge
-*Screenshot of your clean Git history or completed PR showing the conflict was resolved and merged.*
 
-[PASTE SCREENSHOT OF CLEAN RESOLUTION HERE]
+<img width="834" height="449" alt="Screenshot 2026-08-16 213309" src="https://github.com/user-attachments/assets/c20f7149-f6b4-4075-88c1-b2370e96396d" />
 
-* **Caption:** [Describe the final state after resolution]
+
+
+* **Caption:** The commit graph after resolution, showing the two lines of history diverging from their shared parent and rejoining at the merge commit. The branch then merged into `main` through a pull request without further conflict.
 
 ---
 
 ### Conflict 2 — Different Cause
 
-**What cause did you use?** [Name the type of conflict cause — must be different from Conflict 1]
+**What cause did you use?** Modify/delete  `chore/23-remove-unused-stylesheet` deleted `css/layout.css` while `style/24-extend-layout-utilities` modified it.
 
-**Why does this cause trigger a conflict?** [1–2 sentences explaining the mechanism]
+**Why does this cause trigger a conflict?** A three-way merge compares each side against the common ancestor. One side contributes content changes and the other contributes the file's absence, and there is no rule for deciding whether an edit to a deleted file should survive, since either outcome discards work. Git therefore escalates the decision rather than guessing.
 
-[PASTE SCREENSHOT OF CONFLICT MARKERS FOR CONFLICT 2 HERE]
+<img width="1738" height="760" alt="image" src="https://github.com/user-attachments/assets/1dc60221-d212-4873-8b91-ebc6af5417a7" />
 
-* **Caption:** [Brief description of the conflicting branches and file]
+
+
+* **Caption:** `CONFLICT (modify/delete): css/layout.css deleted in main and modified in HEAD`, with `git status` reporting the unmerged path as "deleted by them". Unlike a content conflict, this type produces no in-file markers — Git records the dispute in the index and leaves the working tree copy untouched, because there is no competing version of the content to interleave. I resolved by staging the file, retaining it, since it holds the container and grid rules every page depends on.
 
 ---
 
 ### Conflict 3 — Different Cause
 
-**What cause did you use?** [Name the type of conflict cause — must be different from Conflicts 1 and 2]
+**What cause did you use?** Add/add — `feat/25-add-print-styles` and `feat/26-add-print-stylesheet` each independently created `css/print.css`.
 
-**Why does this cause trigger a conflict?** [1–2 sentences explaining the mechanism]
+**Why does this cause trigger a conflict?** A three-way merge needs a common ancestor version to diff against. Because the file did not exist in the merge base, Git has no baseline from which to compute what either side changed and cannot distinguish an addition from a modification. It presents both versions in full and leaves reconciliation to the developer.
 
-[PASTE SCREENSHOT OF CONFLICT MARKERS FOR CONFLICT 3 HERE]
+<img width="850" height="790" alt="image" src="https://github.com/user-attachments/assets/7a97d86f-cb6f-45e2-8081-fea6c9ea68b0" />
 
-* **Caption:** [Brief description of the conflicting branches and file]
+
+
+* **Caption:** Both print stylesheets rendered in full between conflict markers, with no shared content between them. Because the two rule sets were complementary rather than contradictory  one hiding site chrome and the other setting print typography  I resolved by combining both into a single media query.
 
 ---
-##
+
 ## 6. Feedback & Evaluation
 
-To help improve this course for future engineering cohorts, please take 2 minutes to fill out the anonymous feedback form. Your honest review helps shape how this program is taught next semester!
-- [ ] **Anonymous Evaluation Form:** [Course & Instructor Evaluation](https://forms.gle/YLybnsyXXErKEg3s9)
-
----
- 
-## Final Submission
- 
-Once your repository is complete, submit your work through the official submission form below. The form will **stop accepting responses after Monday, August 17th, 2026** — no late submissions will be accepted.
- 
-> **Submission Form:** [https://forms.gle/KrT4VxtFtkU3wtYu8](https://forms.gle/KrT4VxtFtkU3wtYu8)
+- [x] **Anonymous Evaluation Form:** [Course & Instructor Evaluation](https://forms.gle/YLybnsyXXErKEg3s9)
